@@ -24,7 +24,14 @@ class Ball(Turtle):
         up_side_ball=new_y+r
         down_side_ball=new_y-r
         self.goto(new_x,new_y)
-        if new_x ==right_side_ball
+        if (new_x==-(screen_width*0.5)):
+            self.dx=-self.dx
+        if (new_y==-(screen_height*0.5)):
+            self.dy=-self.dy
+        if (new_x==-(screen_width*0.5)):
+            self.dx=-self.dx
+        if (new_y==-(screen_height*0.5)):
+            self.dy=-self.dy
 
 Ball(50,50,20,20,15,"red")
     
