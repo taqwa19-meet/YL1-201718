@@ -62,8 +62,7 @@ def check_all_balls_collision():
                 radius=random.randint(MINIMUM_BALL_RADIUS,MAXIMUM_BALL_RADIUS)
                 color=(random.random(),random.random(),random.random())
 
-            while dx==0
-            
+           
         
     
 
