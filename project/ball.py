@@ -15,6 +15,7 @@ class Ball(Turtle):
         self.shapesize(r/10)
 
     def move (self,screen_width,screen_height):
+<<<<<<< HEAD:project/ball.py
         current_x = self.x
         new_x=self.x+self.dx
         current_y = self.y
@@ -24,6 +25,18 @@ class Ball(Turtle):
         up_side_ball=new_y+self.r
         down_side_ball=new_y-self.r
         self.goto(new_x,new_y)
+=======
+        while True:
+            current_x = self.x
+            new_x=self.x+self.dx
+            current_y = self.y
+            new_y = self.y+self.dy
+            right_side_ball = new_x+self.r
+            left_side_ball= new_x-self.r
+            up_side_ball=new_y+self.r
+            down_side_ball=new_y-self.r
+            self.goto(new_x,new_y)
+>>>>>>> e0bcc05384e839febb322dd01a9b6841abbe7d6e:ball.py
         if (new_x==-(screen_width*0.5)):
             self.dx=-self.dx
         if (new_y==-(screen_height*0.5)):
